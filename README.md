@@ -41,11 +41,11 @@ FirebaseIdToken.verify(token)
 => {"uid"=>"oyvaFVD2xxxxxxxxZPFVnH1X8Xv1",
  "decoded_token"=>
   {:payload=>
-    {"iss"=>"https://securetoken.google.com/xem-cloud",
+    {"iss"=>"https://securetoken.google.com/your-project",
      "name"=>"User Name",
      "picture"=>
       "https://lh5.googleusercontent.com/-xxxxxx/xxxxxxxxx/AAAAAAAAAT4/xxxxxxx/photo.jpg",
-     "aud"=>"Your Project ID",
+     "aud"=>"your-project",
      "auth_time"=>1522240359,
      "user_id"=>"oyvaFVD2xxxxxxxxZPFVnH1X8Xv1",
      "sub"=>"oyvaFVD2xxxxxxxxZPFVnH1X8Xv1",
