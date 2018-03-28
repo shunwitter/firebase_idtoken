@@ -22,9 +22,9 @@ Or install it yourself as:
 
 ```ruby
 FirebaseIdToken.configure do |config|
-  config.project_ids = 'my-project-id'
-  config.cache_path = 'path/to/cache_file'
-  config.cache_time = 60 * 60 * 2
+  config.project_ids = 'my-project-id'      # Default: nil
+  config.cache_path  = 'path/to/cache_file' # Default: tmp/firebase_public_key
+  config.cache_time  = 60 * 60 * 2          # Default: 60 * 60
 end
 ```
 
@@ -33,8 +33,11 @@ end
 ```ruby
 require('firebase_id_token')
 
-FirebaseIdToken.verify('eyJhbGciOiJSUzI1NiIs.....ajmRoVHvI7A')
+# Token comes from client side
+token = 'eyJhbGciOiJSUzI1NiIs.....ajmRoVHvI7A'
+FirebaseIdToken.verify(token)
 
+# Result
 => {"uid"=>"oyvaFVD2xxxxxxxxZPFVnH1X8Xv1",
  "decoded_token"=>
   {:payload=>
@@ -58,6 +61,10 @@ FirebaseIdToken.verify('eyJhbGciOiJSUzI1NiIs.....ajmRoVHvI7A')
    :header=>
     {"alg"=>"RS256", "kid"=>"f5b18276a4866100000000c3e9434974d1f1db51"}}}
 ```
+
+## Related Docs
+- https://firebase.google.com/docs/auth/admin/verify-id-tokens
+
 
 
 ## License
