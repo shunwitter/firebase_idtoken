@@ -1,4 +1,4 @@
-# FirebaseIdToken
+# FirebaseIdtoken
 
 Retrieved auth UID using ID token sent from client. (Ruby implementation)
 
@@ -7,7 +7,7 @@ Retrieved auth UID using ID token sent from client. (Ruby implementation)
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'firebase_id_token'
+gem 'firebase_idtoken'
 ```
 
 And then execute:
@@ -16,12 +16,12 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install firebase_id_token
+    $ gem install firebase_idtoken
 
 ## Configuration
 
 ```ruby
-FirebaseIdToken.configure do |config|
+FirebaseIdtoken.configure do |config|
   config.project_ids = 'my-project-id'      # Default: nil
   config.cache_path  = 'path/to/cache_file' # Default: tmp/firebase_public_key
   config.cache_time  = 60 * 60 * 2          # Default: 60 * 60
@@ -31,11 +31,11 @@ end
 ## Usage
 
 ```ruby
-require('firebase_id_token')
+require('firebase_idtoken')
 
 # Token comes from client side
 token = 'eyJhbGciOiJSUzI1NiIs.....ajmRoVHvI7A'
-FirebaseIdToken.verify(token)
+FirebaseIdtoken.verify(token)
 
 # Result
 => {"uid"=>"oyvaFVD2xxxxxxxxZPFVnH1X8Xv1",

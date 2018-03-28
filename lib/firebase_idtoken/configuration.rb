@@ -1,4 +1,4 @@
-class FirebaseIdToken::Configuration
+class FirebaseIdtoken::Configuration
   attr_accessor :project_id, :cache_path, :cache_time
 
   def initialize

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    firebase_id_token (0.1.0)
+    firebase_idtoken (0.1.0)
       jwt (~> 2.1)
 
 GEM
@@ -28,7 +28,7 @@ PLATFORMS
 DEPENDENCIES
   awesome_print
   bundler (~> 1.16)
-  firebase_id_token!
+  firebase_idtoken!
   pry
   pry-stack_explorer
   rake (~> 10.0)

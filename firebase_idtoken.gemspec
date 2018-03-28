@@ -1,16 +1,16 @@
 
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'firebase_id_token/version'
+require 'firebase_idtoken/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'firebase_id_token'
-  spec.version       = FirebaseIdToken::VERSION
+  spec.name          = 'firebase_idtoken'
+  spec.version       = FirebaseIdtoken::VERSION
   spec.authors       = ['shunwitter']
 
   spec.summary       = %q{Ruby implementation to verify Google firebase ID token}
   spec.description   = %q{Retrieved UID on server side using ID token sent from client}
-  spec.homepage      = 'https://github.com/shunwitter/firebase_id_token'
+  spec.homepage      = 'https://github.com/shunwitter/firebase_idtoken'
   spec.license       = 'MIT'
   spec.require_paths = ['lib']
 

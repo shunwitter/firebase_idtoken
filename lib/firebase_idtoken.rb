@@ -2,15 +2,15 @@ require 'fileutils'
 require 'net/http'
 require 'jwt'
 
-require "firebase_id_token/version"
-require 'firebase_id_token/configuration'
+require "firebase_idtoken/version"
+require 'firebase_idtoken/configuration'
 
-module FirebaseIdToken
+module FirebaseIdtoken
 
   # -------------------------------------------
   # Config
   #
-  # FirebaseIdToken.configure do |config|
+  # FirebaseIdtoken.configure do |config|
   #   config.project_ids = 'my-project-id'
   #   config.cache_path = 'path/to/cache_file'
   #   config.cache_time = 60 * 60 * 2
