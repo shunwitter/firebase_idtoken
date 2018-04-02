@@ -22,9 +22,9 @@ Or install it yourself as:
 
 ```ruby
 FirebaseIdtoken.configure do |config|
-  config.project_ids = 'my-project-id'      # Default: nil
-  config.cache_path  = 'path/to/cache_file' # Default: tmp/firebase_public_key
-  config.cache_time  = 60 * 60 * 2          # Default: 60 * 60
+  config.project_id = 'my-project-id'      # Default: nil
+  config.cache_path = 'path/to/cache_file' # Default: tmp/firebase_public_key
+  config.cache_time = 60 * 60 * 2          # Default: 60 * 60
 end
 ```
 

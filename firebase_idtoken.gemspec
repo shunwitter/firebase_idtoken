@@ -12,6 +12,9 @@ Gem::Specification.new do |spec|
   spec.description   = %q{Retrieved UID on server side using ID token sent from client}
   spec.homepage      = 'https://github.com/shunwitter/firebase_idtoken'
   spec.license       = 'MIT'
+  spec.files         = `git ls-files -z`.split("\x0").reject do |f|
+    f.match(%r{^(test|spec|features)/})
+  end
   spec.require_paths = ['lib']
 
   spec.add_dependency 'jwt', '~> 2.1'
